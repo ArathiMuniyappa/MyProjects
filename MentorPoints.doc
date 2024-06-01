@@ -1,0 +1,64 @@
+*Prodcution Ready Application -Ready to use. example - whats Up-- we can use it directly.
+    Lot of work has to be done before moving into prodcution like texting, code comprression, Optimization,
+    code minimization all thing has to finishe before distaching to user. these all done by using bundlers.
+    Ex- Application is 10MB, before moving into it has to be reduced to 5MB or less than that. code is less (Optimization)
+    Performance wil be good.
+
+    Bundler - Bundler is developement tool which combines many JS code files into single  one that production ready 
+    Loadable into browser.
+
+    *React Inbuild bundler is WebPack.
+    * BUndler removes commments in code
+    * suppose we have decalred and intialized variable a=10; but nit using in code. so bundler removes it.
+    * Modules like import and exoprt, we write a functionmal component but not exported and unsed in code. it
+       removes it.
+
+    *Usually in react Creat React App command get all required folder stracture. but we will be knowing how it came 
+     and whas the use. so will will learn by manually how to create folder stracture.
+    *We use parcel undler in our projects.
+    * Study Parcel bundler features. like HMR
+
+    * projects
+       *Create Index.html and Index.js files
+       *Add cdn links(React and ReactDOM) in HTML(links get it from react official website)
+       *React is a open source javascript library user for front end developement.
+    *Root Element - We create Root Element so it replaces the HTML data vth React data. 
+                   Usually keep div container of HTML is empty.
+
+
+    Functional Componenets --- Functional component is nothing but normal js function which return jsx.
+                               FC should always be capital letter.
+                               In Functional component write JS code in curly braces.
+                               {Js Code}
+
+    JSX ---- Its a special type of syntax introduced by facebook.
+               Its almost HTML like syntax.      
+
+
+BUILDING SWIGGY Application
+
+   *Take any big Application there will be a App,Header, Body,Footer- This is basic structure.
+     https://i.stack.imgur.com/rvI0H.png
+   *App---
+       Header----
+            logo
+            nav items
+            home
+            about
+            cart 
+            login
+       Body
+         REsturant card - Image
+                          Name
+                          rating
+                          cuisine
+                          delivery time
+                          location
+
+       Footer  
+* We can write list of data abt two or 3 resturants but can not able to write for 50 or 100 resturants. 
+  manually writuing resturant card is very difficult and time taking.
+* so, i will take list of dummy data(resList) then paste into Body component. 
+* i will remove all manual data in Body. restList array contanins objects. so i will use map array method in resturant card. 
+  Each nad every value of resturant card iterate in each data of an object. 
+  
